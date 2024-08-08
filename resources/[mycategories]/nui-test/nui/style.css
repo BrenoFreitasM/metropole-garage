@@ -1,0 +1,18 @@
+.profile-photo {
+    width: 100px;
+
+    position: absolute;
+
+    bottom: 30px;
+    right: 30px;
+}
+
+#location {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    color: white;
+    font-size: 18x;
+    font-family: sans-serif;
+    width: 450px;
+    padding: 10px;
+}
