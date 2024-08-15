@@ -1,5 +1,5 @@
 .nui-wrapper {
-  text-align: center;
+  text-align: left;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@ pre {
 }
 
 .popup-thing {
-  background: #07284F;
+  background-image: linear-gradient(to bottom right,  #22260D 10%,  #8FAC0C ,  #22260D);
   border-radius: 10px;
   width: 1000px;
   height: 500px;
@@ -28,4 +28,12 @@ pre {
 
 .vehicles {
   width: 100px;
+}
+
+.veiculos-title {
+  margin-inline: 33px;
+  margin-bottom: -11px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  font-weight: 900;
 }

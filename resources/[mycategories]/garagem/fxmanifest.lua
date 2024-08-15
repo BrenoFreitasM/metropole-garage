@@ -1,7 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 
-ui_page 'web/index.html'
+-- ui_page 'web/index.html'
+ui_page 'web/build/index.html'
+
 
 files {
   'web/index.html',
@@ -10,10 +12,10 @@ files {
 }
 
 client_scripts {
-  'client.lua',
+  'client/client.lua',
 }
 
 server_scripts {
   '@oxmysql/lib/MySQL.lua',
-  'server.lua'
+  'server/server.lua'
 }

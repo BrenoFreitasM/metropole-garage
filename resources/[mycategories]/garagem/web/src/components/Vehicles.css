@@ -1,17 +1,19 @@
 .test {
   padding: 27px;
-  align-items: center;
-  justify-content: center;
+  max-width: 100%; /* Limita a largura do contêiner principal */
+  overflow: hidden; /* Evita que o conteúdo extravase os limites */
 }
 
 .slick-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%; /* Garante que cada slide não ultrapasse a largura */
+  width: 535 !important; /* Garante que o slide se ajuste ao conteúdo */
 }
 
 h3 {
-  background-color: red;
+  background-color: #ffff;
   text-align: end;
   padding: 0;
 }
@@ -25,44 +27,49 @@ h3 {
   color: #333;
 }
 
-
-.carousel-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-  grid-template-rows: repeat(2, 1fr); /* 2 linhas */
-  gap: 10px;
-  height: 100%;
-}
-
-.carousel-item img{
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-item  img {
-  background-color: rgb(205, 205, 205);
-  width: 70px;
-  height: 150px; /* Defina a altura desejada */
-  margin: 5px;
-  justify-content: center;
-  align-self: auto;
-  align-items: center;
-  padding: 20px;
-  object-fit: cover;
-}
-
-.slick-slide {
+.carousel-item {
+  padding: 5px; /* Espaçamento interno */
+  margin: 0 2px; /* Reduz o espaçamento externo para aproximar os itens */
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%; /* Garante que o item não ultrapasse a largura do slide */
 }
 
-.slick-prev, .slick-next {
-  z-index: 1;
-  color: #333;
+.carousel-button {
+  width: 299px;
+  margin: 0 auto; /* Centraliza o botão dentro do contêiner pai */
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.slick-dots li button:before {
-  color: #333;
+.img {
+  object-fit: scale-down;
+  padding-top: 6px;
+  margin-bottom: 6px;
+  height: 108px;
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
+}
+
+.button-text {
+  background-image: linear-gradient(to bottom, #8FAC0C 50%, #22260D);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  width: 100%; /* Garante que o h3 tenha a mesma largura do botão */
+  height: 23px;
+  text-align: end; /* Alinha o texto ao final */
+  margin: 0;
+  padding-right: 10px; /* Adiciona um pouco de espaço à direita */
+  /* padding-top: 6px; */
+  border-radius: 0px 0px 4px 4px;
+}
+
+.carNameButton {
+  width: 100%;
+  height: 36px;
+  background-color: red;
 }

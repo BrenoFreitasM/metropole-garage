@@ -3,8 +3,6 @@ import './App.css'
 import {debugData} from "../utils/debugData";
 import {fetchNui} from "../utils/fetchNui";
 import { useNuiEvent } from '../hooks/useNuiEvent';
-import Carousel from './Carousel';
-import Cars from './Cars';
 import Vehicles from './Vehicles';
 
 // This will set the NUI to visible if we are
@@ -73,11 +71,9 @@ const App: React.FC = () => {
   return (
     <div className="nui-wrapper">
       <div className='popup-thing'>
-        <div>
-          <h1>Veículos</h1>
+          <h1 className='veiculos-title'>Veículos</h1>
           {/* <button onClick={handleGetClientData}>Obtenha dados do cliente</button>
           {clientData && <ReturnClientDataComp data={clientData} />} */}
-        </div>
           
         {/* <Cars onSelectCar={handleSelectCar} /> */}
         {/* {selectedCar && (
